@@ -1,28 +1,30 @@
+@import "../../index.scss";
+
 .product {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 5px;
     align-items: center;
-    color: var(--accentColor);
+    color: $accentColor;
     background-color: rgb(78, 78, 78);
     width: 100%;
     padding: 0 20px 20px;
     border-radius: 8px;
     font-size: 28px;
+
+    &__body {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid rgb(126, 126, 126);
+        text-align: center;
+        margin-bottom: 10px;
+    }
 }
   
-.productBody {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid rgb(126, 126, 126);
-    text-align: center;
-    margin-bottom: 10px;
-}
-
 .miniButtons {
     display: flex;
     justify-content: center;
@@ -34,38 +36,32 @@
     width: 40px;
     height: 40px;
     font-size: 24px;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgb(36, 36, 36);
-    background-color: var(--accentColor);
+    @include sectionStyle($accentColor);
     cursor: pointer;
-}
 
-.miniButton--quantity {
-    padding: 5px 0;
-    width: 40px;
-    height: 40px;
-    font-size: 24px;
-    border-radius: 4px;
-    box-shadow: 0 0 10px rgb(41, 41, 41);
-    background-color: var(--accentColor);
-    cursor: pointer;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    &--quantity {
+        padding: 5px 0;
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+        @include sectionStyle($accentColor);
+        cursor: pointer;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.miniButton--quantityCount {
-    padding: 5px 0;
-    width: 40px;
-    height: 40px;
-    font-size: 24px;
-    border-radius: 4px;
-    box-shadow: 0 0 10px rgb(41, 41, 41);
-    background-color:var(--lowColor);
-    cursor: pointer;
-    color: var(--accentColor);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    &--quantityCount {
+        padding: 5px 0;
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+        @include sectionStyle($lowColor);
+        cursor: pointer;
+        color: $accentColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

@@ -22,7 +22,7 @@ export default function Product ({
     <li
       className="product"
     >
-      <div className="productBody">
+      <div className="product__body">
         {body}
       </div>
       <div>
