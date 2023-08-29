@@ -1,0 +1,22 @@
+.inputSection {
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+.input {
+padding: 8px 20px;
+border-radius: 7px;
+font-size: 18px;
+width: 100%;
+background-color: rgb(59, 59, 59);
+color: rgb(206, 206, 206);
+}
+
+.label {
+font-size: 20px;
+color: rgb(209, 209, 209);
+}

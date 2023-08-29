@@ -1,0 +1,21 @@
+{
+    "header" : {
+      "title" : "Shopping list"
+    },
+    "list" : {
+      "msg" : "Your shopping list is absolutely empty"
+    },
+    "controler" : {
+      "label" : "Control your shopping list",
+      "input" : {
+        "placeholder" : "enter product"
+      },
+      "buttons" : {
+        "remove" : "remove all",
+        "add" : "add"
+      }
+    },
+    "footer" : {
+      "signature" : "ARWcode 2023_v1.01"
+    }
+  }

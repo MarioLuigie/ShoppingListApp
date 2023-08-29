@@ -1,0 +1,23 @@
+.buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    padding-top: 25px;
+}
+  
+.buttonSection {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.button {
+padding: 10px 0;
+width: 120px;
+font-size: 18px;
+border-radius: 12px;
+box-shadow: 0 0 10px rgb(41, 41, 41);
+background-color: var(--accentColor);
+cursor: pointer;
+}
